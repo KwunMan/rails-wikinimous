@@ -1,0 +1,10 @@
+<h1>Articles</h1>
+<form>
+  <ul class="form-check list-unstyled">
+    <% @articles.each do |article| %>
+      <%= article.title %>
+      <br>
+      <%= article.content %>
+    <% end %>
+  </ul>
+</form>
